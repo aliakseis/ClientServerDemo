@@ -1,0 +1,10 @@
+; printScreenServer.def : Declares the module parameters.
+
+LIBRARY      "printScreenServer.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

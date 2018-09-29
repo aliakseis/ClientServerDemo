@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "printScreenServer", "printScreenServer.vcproj", "{247E1E33-F260-42C9-AD8F-3B9711545CA1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "printScreenServerPS", "printScreenServerPS.vcproj", "{846DCD26-4416-4E06-8D2F-48568E86F4D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{247E1E33-F260-42C9-AD8F-3B9711545CA1} = {247E1E33-F260-42C9-AD8F-3B9711545CA1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "printScreenClient", "..\printScreenClient\printScreenClient.vcproj", "{25017508-EF90-4133-90E6-F573EF45C3AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{247E1E33-F260-42C9-AD8F-3B9711545CA1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{247E1E33-F260-42C9-AD8F-3B9711545CA1}.Debug|Win32.Build.0 = Debug|Win32
+		{247E1E33-F260-42C9-AD8F-3B9711545CA1}.Release|Win32.ActiveCfg = Release|Win32
+		{247E1E33-F260-42C9-AD8F-3B9711545CA1}.Release|Win32.Build.0 = Release|Win32
+		{846DCD26-4416-4E06-8D2F-48568E86F4D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{846DCD26-4416-4E06-8D2F-48568E86F4D1}.Release|Win32.ActiveCfg = Release|Win32
+		{25017508-EF90-4133-90E6-F573EF45C3AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25017508-EF90-4133-90E6-F573EF45C3AE}.Debug|Win32.Build.0 = Debug|Win32
+		{25017508-EF90-4133-90E6-F573EF45C3AE}.Release|Win32.ActiveCfg = Release|Win32
+		{25017508-EF90-4133-90E6-F573EF45C3AE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

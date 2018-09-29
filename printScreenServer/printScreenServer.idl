@@ -1,0 +1,37 @@
+// printScreenServer.idl : IDL source for printScreenServer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (printScreenServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(3CE2C7BE-8B39-4680-8C23-3D48EEC6F5D6),
+	dual,
+	nonextensible,
+	helpstring("IPrintScreen Interface"),
+	pointer_default(unique)
+]
+interface IPrintScreen : IDispatch{
+    [id(1), helpstring("method Execute")] HRESULT Execute(void);
+};
+[
+	uuid(B33C0295-D885-4EBA-A2B3-C7399979CD97),
+	version(1.0),
+	helpstring("printScreenServer 1.0 Type Library")
+]
+library printScreenServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(CEFD3DE3-8B5D-4E52-92D1-16C8435D5DDB),
+		helpstring("PrintScreen Class")
+	]
+	coclass PrintScreen
+	{
+		[default] interface IPrintScreen;
+	};
+};

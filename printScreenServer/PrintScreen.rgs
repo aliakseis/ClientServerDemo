@@ -1,0 +1,26 @@
+HKCR
+{
+	printScreenServer.PrintScreen.1 = s 'PrintScreen Class'
+	{
+		CLSID = s '{CEFD3DE3-8B5D-4E52-92D1-16C8435D5DDB}'
+	}
+	printScreenServer.PrintScreen = s 'PrintScreen Class'
+	{
+		CLSID = s '{CEFD3DE3-8B5D-4E52-92D1-16C8435D5DDB}'
+		CurVer = s 'printScreenServer.PrintScreen.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {CEFD3DE3-8B5D-4E52-92D1-16C8435D5DDB} = s 'PrintScreen Class'
+		{
+			ProgID = s 'printScreenServer.PrintScreen.1'
+			VersionIndependentProgID = s 'printScreenServer.PrintScreen'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{B33C0295-D885-4EBA-A2B3-C7399979CD97}'
+		}
+	}
+}
